@@ -23,10 +23,10 @@ section{
     padding: 1em;
     margin: 1em;
     width: 35%;
+    box-sizing: border-box;
 }
 @media (max-width: 600px) {
     section {
         min-width: 90%;
-        box-sizing: border-box;
     }
 }
