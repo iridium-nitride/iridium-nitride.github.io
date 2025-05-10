@@ -22,6 +22,7 @@ section{
     border: 1px solid white;
     padding: 1em;
     margin: 1em;
+    width: 35%;
 }
 @media (max-width: 600px) {
     section {
