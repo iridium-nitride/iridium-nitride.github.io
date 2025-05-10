@@ -18,6 +18,7 @@ main{
 }
 header{
     margin: 0.5em 0;
+    text-align: center;
 }
 footer{
     margin: 1em 0;
