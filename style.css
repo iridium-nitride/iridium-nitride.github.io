@@ -6,7 +6,7 @@ body{
 }
 @media (max-width: 600px) {
     section {
-        min-width: auto;
+        min-width: 90%;
         box-sizing: border-box;
     }
 }
