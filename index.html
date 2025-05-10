@@ -10,6 +10,7 @@
     <main>
         <header>
             <h1>hello!!</h1>
+            <p>the current time for me is <span id="currentTime" style="font-weight:bold;"></span></p>
         </header>
         <section id="infoSection">
             <h2>information ^^</h2>
@@ -64,5 +65,16 @@
         </footer>
         <!-- thank you for checking out my website :3 -->
     </main>
+        <script>
+            function timeUpdate(){
+                const time = new Date();
+                const hours = time.getHours().toString().padStart(2, '0');
+                const minutes = time.getMinutes().toString().padStart(2, '0');
+                const seconds = time.getSeconds().toString().padStart(2, '0');
+                document.querySelector(`#currentTime`).textContent = `${hours}:${minutes}:${seconds}`;
+            }
+            timeUpdate();
+            setInterval(timeUpdate, 1000);
+        </script>
 </body>
 </html>
