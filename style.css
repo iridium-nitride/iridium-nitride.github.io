@@ -4,12 +4,6 @@ body{
     font-family: monospace;
     font-size: 16px;
 }
-@media (max-width: 600px) {
-    section {
-        min-width: 90%;
-        box-sizing: border-box;
-    }
-}
 main{
     display: flex;
     flex-direction: column;
@@ -28,4 +22,11 @@ section{
     border: 1px solid white;
     padding: 1em;
     margin: 1em;
+    width: 90%;
+    box-sizing: border-box;
+}
+@media (min-width: 1024px;) {
+    section {
+        width: 50%;
+    }
 }
