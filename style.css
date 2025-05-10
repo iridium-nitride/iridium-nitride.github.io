@@ -22,7 +22,7 @@ section{
     border: 1px solid white;
     padding: 1em;
     margin: 1em;
-    width: 90%;
+    width: 80%;
     box-sizing: border-box;
 }
 @media (min-width: 1024px;) {
