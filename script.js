@@ -7,7 +7,7 @@ function timeUpdate(){
         hour12: false 
     };
     const time = new Date().toLocaleTimeString('en-AU', options);
-    document.querySelector('#currentTime').textContent = time;
+    document.querySelector('#localTime').textContent = time;
 }
 timeUpdate();
 setInterval(timeUpdate, 1000);
