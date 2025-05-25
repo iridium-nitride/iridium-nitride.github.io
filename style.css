@@ -25,17 +25,12 @@
 @media (prefers-color-scheme: dark){
     :root{
         --color: #ffffff;
-        --background-color: #080810;
-        --header-color: #060608;
+        --background-color: #000000;
     }
 }
 *{
     font-family: var(--font);
     box-sizing: border-box;
-}
-a{
-    color: var(--anchor-color);
-    text-decoration: none;
 }
 hr{
     width: 100%;
