@@ -1,124 +1,69 @@
 :root{
-    --font: monospace;
     --padding: 1rem;
-    --anchor-color: dodgerblue;
-}
-@media (max-width: 1280px) {
-    main {
-        flex-direction: column !important;
-        width: 80% !important;
-    }
-    article, aside{
-        width: 100% !important;
-    }
-    #profileImage{
-        width: 24rem !important;
-    }
+    --font-family: monospace;
 }
 @media (prefers-color-scheme: light){
     :root{
-        --color: #000000;
-        --background-color: #ffffff;
-        --accent-color: #ffffff;
+        --color: black;
+        --background-color: white;
     }
 }
 @media (prefers-color-scheme: dark){
     :root{
-        --color: #ffffff;
-        --background-color: #000000;
+        --color: white;
+        --background-color: black;
+    }
+}
+
+@media (min-width: 768px){
+    main{
+        width: 90%;
+        flex-direction: column;
     }
 }
 *{
-    font-family: var(--font);
     box-sizing: border-box;
+    font-family: var(--font-family);
 }
-h2{
-    font-weight: normal;
-}
-hr{
+table{
     width: 100%;
-    border: none;
-    border-top: 1px solid var(--color);
 }
 th{
     text-align: left;
-    text-transform: uppercase;
 }
 td{
     text-align: right;
 }
-button{
-    color: var(--color);
-    background-color: var(--background-color);
-    border: 1px solid var(--color);
-}
-button:hover{
-    color: var(--background-color);
-    background-color: var(--color);
-}
-#form{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 2rem;
-    margin: 0;
-    padding: 0;
-}
-#formInput{
-    color: var(--color);
-    background-color: var(--background-color);
-    border: 1px solid var(--color);
-    border-radius: 0;
-    width: 75%;
-}
-#formSubmit{
-    width: 20%;
-}
 html, body{
-    color: var(--color);
-    background-color: var(--background-color);
-    font-size: 14px;
-    width: 100%;
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
+}
+body{
+    color: var(--color);
+    background-color: var(--background-color);
 }
 #container{
     display: flex;
     justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 main{
     display: flex;
     flex-direction: row;
     width: 60%;
+    height: 100%;
     padding: var(--padding);
 }
 article, aside{
-    display: flex;
-    flex-direction: column;
     padding: var(--padding);
-}
-aside{
-    width: 35%;
-}
-#infoBox{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.infoTable{
-    width: 100%;
-    margin-bottom: var(--padding);
-}
-.statProperty{
-    margin-right: var(--padding);
-    opacity: 0.6;
+    height: 100%;
 }
 article{
     width: 65%;
 }
-#profileImage{
-    border: 1px solid var(--color);
+aside{
+    width: 35%;
 }
