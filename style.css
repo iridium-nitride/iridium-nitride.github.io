@@ -79,6 +79,7 @@ form input, form button{
     color: var(--color);
     background-color: var(--background-color);
     border: 1px solid var(--color);
+    padding: var(--padding);
 }
 form button:hover{
     color: var(--background-color);
