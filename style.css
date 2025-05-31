@@ -1,6 +1,8 @@
 :root{
     --padding: 1rem;
     --font-family: monospace;
+    --unvisited-link: dodgerblue;
+    --visited-link: blueviolet;
 }
 @media (prefers-color-scheme: light){
     :root{
@@ -11,7 +13,7 @@
 @media (prefers-color-scheme: dark){
     :root{
         --color: white;
-        --background-color: black;
+        --background-color: #080016;
     }
 }
 @media (max-width: 1280px){
@@ -29,6 +31,13 @@
 *{
     box-sizing: border-box;
     font-family: var(--font-family);
+}
+a{
+    color: var(--unvisited-link);
+    text-decoration: underline;
+}
+a:visited{
+    color: var(--visited-link);
 }
 table{
     width: 100%;
